@@ -171,7 +171,7 @@ ul {
 
 /* メインブランド名 URBAN-S をさらに巨大化 */
 .hero-brand {
-  font-size: clamp(4.5rem, 11vw, 9.5rem); /* かなり大きく存在感アップ */
+  font-size: clamp(3rem, 7vw, 9.5rem); /* かなり大きく存在感アップ */
   line-height: 0.9;
   font-weight: 800;
   letter-spacing: -0.02em;
