@@ -1,3 +1,4 @@
+CSS
 /* ==========================================
    RESET & BASE STYLES
    ========================================== */
@@ -8,11 +9,11 @@
 }
 
 body {
-  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
-  background-color: #0f0f11; /* 深みのあるダークグレー背景でブランド感を演出 */
-  color: #f0f0f2;
+  font-family: 'Montserrat', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
   line-height: 1.8;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -27,7 +28,7 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -44,17 +45,17 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(15, 15, 17, 0.85);
-  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #eeeeee;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 20px 32px;
 }
@@ -67,155 +68,155 @@ ul {
 
 .logo-main {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 0.15em;
-  color: #fff;
+  color: #000000;
 }
 
 .logo-sub {
   font-size: 0.75rem;
-  color: #888;
+  color: #888888;
   letter-spacing: 0.1em;
 }
 
 .nav ul {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
 }
 
 .nav a {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #aaa;
+  color: #555555;
   letter-spacing: 0.12em;
   transition: color 0.3s;
 }
 
 .nav a:hover, .nav a.active {
-  color: #fff;
+  color: #000000;
 }
 
 .nav-btn {
-  background-color: #fff;
-  color: #0f0f11 !important;
+  background-color: #111111;
+  color: #ffffff !important;
   padding: 10px 22px;
   border-radius: 30px;
-  font-weight: 700 !important;
-  transition: transform 0.3s, opacity 0.3s;
+  font-weight: 600 !important;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .nav-btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
 /* ==========================================
    SECTIONS
    ========================================== */
 .section {
-  padding: 140px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 120px 0;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .section-num {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  color: #666;
+  color: #999999;
   margin-bottom: 12px;
   letter-spacing: 0.2em;
 }
 
 .section-title {
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 700;
-  margin-bottom: 32px;
-  letter-spacing: 0.1em;
-  color: #fff;
+  margin-bottom: 24px;
+  letter-spacing: 0.08em;
+  color: #000000;
 }
 
 .section-desc {
-  color: #999;
-  font-size: 1.05rem;
-  margin-bottom: 60px;
-  max-width: 600px;
+  color: #666666;
+  font-size: 1rem;
+  margin-bottom: 48px;
+  max-width: 650px;
 }
 
 /* ==========================================
    01 HERO
    ========================================== */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   padding: 160px 32px 80px;
-  background: radial-gradient(circle at 75% 30%, #2a2a32 0%, #0f0f11 65%);
+  background-color: #fafafa;
   position: relative;
 }
 
 .hero-inner {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   width: 100%;
 }
 
 .hero-subtitle {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.3em;
-  color: #888;
-  margin-bottom: 24px;
+  letter-spacing: 0.25em;
+  color: #888888;
+  margin-bottom: 20px;
 }
 
 .hero-title {
-  font-size: clamp(3.5rem, 8vw, 7.5rem);
-  line-height: 0.95;
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  line-height: 1.02;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   letter-spacing: -0.01em;
-  color: #fff;
+  color: #111111;
 }
 
 .hero-copy {
-  font-size: 1.3rem;
-  color: #bbb;
-  margin-bottom: 48px;
-  font-weight: 300;
+  font-size: 1.25rem;
+  color: #444444;
+  margin-bottom: 40px;
+  font-weight: 400;
 }
 
 .hero-tags {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .hero-tags span {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #eee;
-  padding: 10px 24px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #333333;
+  padding: 8px 20px;
   font-size: 0.85rem;
-  border-radius: 30px;
-  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 /* ==========================================
    02 ABOUT
    ========================================== */
 .about-lead {
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  line-height: 1.4;
-  margin-bottom: 32px;
-  color: #fff;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.45;
+  margin-bottom: 28px;
+  color: #111111;
   font-weight: 500;
 }
 
 .about-text {
-  color: #aaa;
-  font-size: 1.1rem;
-  max-width: 700px;
-  line-height: 2;
+  color: #555555;
+  font-size: 1.05rem;
+  max-width: 720px;
+  line-height: 1.9;
 }
 
 /* ==========================================
@@ -223,39 +224,40 @@ ul {
    ========================================== */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
 }
 
 .service-card {
-  background: #18181c;
-  padding: 36px 28px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s, border-color 0.3s;
+  background: #fdfdfd;
+  padding: 32px 24px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+  border-color: #111111;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
 }
 
 .step-num {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  color: #666;
+  color: #aaaaaa;
   letter-spacing: 0.15em;
 }
 
 .service-card h3 {
-  font-size: 1.25rem;
-  margin: 16px 0 12px;
-  color: #fff;
+  font-size: 1.15rem;
+  margin: 14px 0 10px;
+  color: #111111;
 }
 
 .service-card p {
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 0.88rem;
+  color: #666666;
 }
 
 /* ==========================================
@@ -263,31 +265,30 @@ ul {
    ========================================== */
 .items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
 }
 
 .item-circle {
   aspect-ratio: 1 / 1;
-  background: #18181c;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #f7f7f7;
+  border: 1px solid #e2e2e2;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 0.95rem;
-  color: #ddd;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #222222;
+  transition: all 0.3s ease;
   cursor: default;
 }
 
 .item-circle:hover {
-  transform: scale(1.05);
-  background: #fff;
-  color: #0f0f11;
-  border-color: #fff;
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+  transform: scale(1.04);
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
 }
 
 /* ==========================================
@@ -296,22 +297,23 @@ ul {
 .process-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 12px;
 }
 
 .tag {
-  background: #18181c;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #ccc;
-  padding: 14px 28px;
-  border-radius: 40px;
-  font-size: 0.9rem;
-  transition: background 0.3s, color 0.3s;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  color: #333333;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .tag:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
 }
 
 /* ==========================================
@@ -320,25 +322,25 @@ ul {
 .strengths-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .strength-item {
-  background: #18181c;
-  padding: 28px 32px;
-  border-radius: 12px;
-  border-left: 4px solid #fff;
+  background: #fafafa;
+  padding: 24px 28px;
+  border-radius: 8px;
+  border-left: 3px solid #111111;
 }
 
 .strength-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  color: #111111;
 }
 
 .strength-item p {
-  font-size: 0.95rem;
-  color: #999;
+  font-size: 0.92rem;
+  color: #555555;
 }
 
 /* ==========================================
@@ -346,41 +348,41 @@ ul {
    ========================================== */
 .numbers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
 .num-card {
-  background: linear-gradient(145deg, #18181c 0%, #121215 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 48px 32px;
-  border-radius: 16px;
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  padding: 40px 28px;
+  border-radius: 12px;
   text-align: center;
 }
 
 .num-label {
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 0.85rem;
+  color: #777777;
   letter-spacing: 0.15em;
 }
 
 .num-val {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 700;
-  margin: 16px 0;
-  color: #fff;
+  margin: 12px 0;
+  color: #111111;
   line-height: 1;
 }
 
 .num-val span {
-  font-size: 1.4rem;
-  margin-left: 6px;
-  color: #aaa;
+  font-size: 1.3rem;
+  margin-left: 4px;
+  color: #555555;
 }
 
 .num-card p {
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 0.88rem;
+  color: #666666;
 }
 
 /* ==========================================
@@ -388,20 +390,20 @@ ul {
    ========================================== */
 .btn-primary, .btn-contact {
   display: inline-block;
-  background: #fff;
-  color: #0f0f11;
-  padding: 16px 48px;
-  border-radius: 40px;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-top: 24px;
-  letter-spacing: 0.1em;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #111111;
+  color: #ffffff;
+  padding: 16px 44px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 0.08em;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .btn-primary:hover, .btn-contact:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+  opacity: 0.85;
+  transform: translateY(-2px);
 }
 
 /* ==========================================
@@ -409,43 +411,43 @@ ul {
    ========================================== */
 .production-boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
 }
 
 .prod-box {
-  background: #18181c;
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 32px;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  padding: 28px;
   text-align: center;
-  font-weight: 700;
-  font-size: 1.1rem;
-  border-radius: 12px;
-  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: #222222;
 }
 
 .flow-steps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
 }
 
 .step {
-  background: #18181c;
-  border: 1px solid rgba(255,255,255,0.05);
-  padding: 24px 16px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  padding: 20px 14px;
   text-align: center;
-  font-size: 0.95rem;
-  border-radius: 10px;
-  color: #eee;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  color: #333333;
 }
 
 .step span {
   display: block;
-  font-size: 0.8rem;
-  color: #666;
+  font-size: 0.75rem;
+  color: #888888;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 /* ==========================================
@@ -453,117 +455,123 @@ ul {
    ========================================== */
 .company-list {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 20px 32px;
-  background: #18181c;
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 48px;
-  border-radius: 16px;
+  grid-template-columns: 150px 1fr;
+  gap: 18px 28px;
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  padding: 40px;
+  border-radius: 12px;
 }
 
 .company-list dt {
   font-weight: 700;
-  color: #777;
-  font-size: 0.9rem;
+  color: #666666;
+  font-size: 0.88rem;
 }
 
 .company-list dd {
-  font-size: 1rem;
-  color: #ddd;
+  font-size: 0.95rem;
+  color: #222222;
 }
 
 /* ==========================================
    WORKS PAGE
    ========================================== */
 .page-header {
-  padding: 160px 0 60px;
-  background: #141417;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 150px 0 50px;
+  background: #fafafa;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .page-header h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  color: #fff;
+  color: #111111;
 }
 
 .page-header p {
-  color: #888;
-  margin-top: 8px;
+  color: #666666;
+  margin-top: 6px;
 }
 
 .category-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 48px;
+  gap: 8px;
+  margin-bottom: 40px;
 }
 
 .cat-tag {
-  padding: 10px 20px;
-  background: #18181c;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 30px;
-  font-size: 0.85rem;
-  color: #aaa;
+  padding: 8px 18px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  color: #555555;
   cursor: pointer;
 }
 
 .cat-tag.active {
-  background: #fff;
-  color: #0f0f11;
-  font-weight: 700;
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+  font-weight: 600;
 }
 
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
 }
 
 .work-card {
-  background: #18181c;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
   overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.work-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
 }
 
 .work-img-placeholder {
-  height: 240px;
-  background: #25252b;
+  height: 220px;
+  background: #f0f0f2;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666;
+  color: #888888;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
 }
 
 .work-info {
-  padding: 24px;
+  padding: 20px;
 }
 
 .work-cat {
   font-size: 0.75rem;
-  color: #777;
+  color: #888888;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
 .work-title {
-  font-size: 1.2rem;
-  margin: 8px 0;
-  color: #fff;
+  font-size: 1.1rem;
+  margin: 6px 0;
+  color: #111111;
 }
 
 .work-desc {
   font-size: 0.85rem;
-  color: #888;
+  color: #666666;
 }
 
 .works-back {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 /* ==========================================
@@ -571,10 +579,10 @@ ul {
    ========================================== */
 .footer {
   text-align: center;
-  padding: 60px 32px;
-  font-size: 0.85rem;
-  color: #666;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 50px 32px;
+  font-size: 0.82rem;
+  color: #888888;
+  border-top: 1px solid #eeeeee;
 }
 
 /* ==========================================
@@ -586,10 +594,10 @@ ul {
   }
   .company-list {
     grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 28px;
+    gap: 6px;
+    padding: 24px;
   }
   .company-list dt {
-    margin-top: 16px;
+    margin-top: 12px;
   }
 }
