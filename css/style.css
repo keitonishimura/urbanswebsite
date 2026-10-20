@@ -147,10 +147,10 @@ ul {
    01 HERO
    ========================================== */
 .hero {
-  min-height: 85vh;
+  min-height: 75vh;             /* 高さを少し詰めて上寄りに */
   display: flex;
-  align-items: center;
-  padding: 160px 32px 80px;
+  align-items: flex-start;      /* 上揃えに配置 */
+  padding: 120px 32px 40px;     /* 上の余白を詰めて上に持ってくる */
   background-color: #fafafa;
   position: relative;
 }
@@ -162,37 +162,37 @@ ul {
 }
 
 .hero-subtitle {
-  font-size: 0.85rem;
+  font-size: 1rem;             /* 拡大 */
   font-weight: 700;
   letter-spacing: 0.25em;
   color: #888888;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
-/* メインブランド名 URBAN-S を大きく表示 */
+/* メインブランド名 URBAN-S をさらに巨大化 */
 .hero-brand {
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  line-height: 0.95;
-  font-weight: 700;
+  font-size: clamp(4.5rem, 11vw, 9.5rem); /* かなり大きく存在感アップ */
+  line-height: 0.9;
+  font-weight: 800;
   letter-spacing: -0.02em;
   color: #111111;
   margin-bottom: 12px;
 }
 
-/* FROM IDEA TO PRODUCT. を小さめ・洗練されたサイズ感に */
+/* FROM IDEA TO PRODUCT. も一回り拡大 */
 .hero-title-sub {
-  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  color: #555555;
-  margin-bottom: 24px;
+  font-size: clamp(1.4rem, 3.2vw, 2.4rem); /* 拡大 */
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #444444;
+  margin-bottom: 20px;
 }
 
 .hero-copy {
-  font-size: 1.15rem;
-  color: #444444;
-  margin-bottom: 36px;
-  font-weight: 400;
+  font-size: 1.35rem;           /* 拡大 */
+  color: #333333;
+  margin-bottom: 32px;
+  font-weight: 500;
 }
 
 .hero-tags {
@@ -203,12 +203,13 @@ ul {
 
 .hero-tags span {
   background: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #333333;
-  padding: 8px 20px;
-  font-size: 0.85rem;
-  border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border: 1px solid #dcdcdc;
+  color: #222222;
+  padding: 10px 24px;          /* タグも少し大きく */
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
 }
 /* ==========================================
    02 ABOUT
