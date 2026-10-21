@@ -290,10 +290,11 @@ ul {
 /* ==========================================
    04 ITEMS
    ========================================== */
+/* ITEMS（全体） */
 .items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr) !important; /* PCもスマホも絶対に横3列に並べる */
+  gap: 16px;
 }
 
 .item-circle {
