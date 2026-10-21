@@ -629,7 +629,15 @@ ul {
   }
 
   /* ▼ スマホでの崩れ（不自然な改行）を抑える追加設定 ▼ */
+　/* ITEMS（丸いバッジ）をスマホで横3列に並べる指定 */
+  .items-grid {
+    grid-template-columns: repeat(3, 1fr) !important; /* 横に3個並べる */
+    gap: 12px !important;                             /* すき間を小さく調整 */
+  }
 
+  .item-circle {
+    font-size: 0.75rem !important;                    /* 丸の中の文字サイズ調整 */
+  }
   /* サブタイトル：文字サイズと間の隙間を小さくして1行に収める */
   .hero-subtitle {
     font-size: 0.75rem !important;
