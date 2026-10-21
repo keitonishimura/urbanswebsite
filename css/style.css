@@ -627,4 +627,29 @@ ul {
   .company-list dt {
     margin-top: 12px;
   }
+
+  /* ▼ スマホでの崩れ（不自然な改行）を抑える追加設定 ▼ */
+
+  /* サブタイトル：文字サイズと間の隙間を小さくして1行に収める */
+  .hero-subtitle {
+    font-size: 0.75rem !important;
+    gap: 0.8em !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  /* 単語の途中で変に改行されるのを防ぐ */
+  .hero-subtitle span {
+    white-space: nowrap;
+  }
+
+  /* メインロゴ：スマホ幅に収まるよう文字サイズを自動調整 */
+  .hero-brand {
+    font-size: clamp(2rem, 8.5vw, 3.5rem);
+    flex-wrap: nowrap; /* 縦に2段になるのを防ぐ */
+  }
+
+  .hero-brand .brand-sub {
+    font-size: 0.4em !important;
+    white-space: nowrap;
+  }
 }
