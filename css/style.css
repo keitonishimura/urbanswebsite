@@ -162,15 +162,15 @@ ul {
 }
 
 .hero-subtitle {
-  font-size: 1rem;             /* 拡大 */
+  font-size: 1rem;              /* 拡大 */
   font-weight: 700;
   letter-spacing: 0.25em;
   color: #888888;
   margin-bottom: 12px;
-   display: flex;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-start; /* ★ center から flex-start に変更（左揃え） */
   align-items: center;
-  gap: 2em; /* 間の広さ。数値を大きくすると広がり、小さくすると狭まります */
+  gap: 2em; /* 間の広さ */
 }
 
 /* メインブランド名 URBAN-S をさらに巨大化 */
