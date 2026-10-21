@@ -167,6 +167,10 @@ ul {
   letter-spacing: 0.25em;
   color: #888888;
   margin-bottom: 12px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em; /* 間の広さ。数値を大きくすると広がり、小さくすると狭まります */
 }
 
 /* メインブランド名 URBAN-S をさらに巨大化 */
