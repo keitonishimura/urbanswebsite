@@ -174,14 +174,26 @@ ul {
   text-align: left !important;
 }
 
-/* メインブランド名 URBAN-S をさらに巨大化 */
+/* メインブランド名 URBAN-S */
 .hero-brand {
-  font-size: clamp(3rem, 7vw, 9.5rem); /* かなり大きく存在感アップ */
+  font-size: clamp(3rem, 7vw, 9.5rem);
   line-height: 0.9;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #111111;
   margin-bottom: 12px;
+  display: flex;
+  align-items: baseline; /* 文字の下端（ベースライン）で揃える */
+  gap: 0.25em;           /* URBAN-S と Co., Ltd. の間隔 */
+  flex-wrap: wrap;       /* 画面幅が狭い場合も綺麗に折り返す */
+}
+
+/* 「Co., Ltd.」部分を小さくバランス調整 */
+.hero-brand .brand-sub {
+  font-size: 0.45em;     /* メインロゴの約半分（45%）の大きさに縮小 */
+  font-weight: 500;     /* 太さを一段落として上品に */
+  letter-spacing: 0.05em;
+  color: #444444;       /* 色味を抑えて主役を引き立てる */
 }
 
 /* FROM IDEA TO PRODUCT. も一回り拡大 */
