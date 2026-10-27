@@ -302,15 +302,30 @@
     <div class="container text-center">
       <h2 class="section-title">CONTACT</h2>
       <p class="contact-lead">お仕事のご依頼・お見積もり・ご相談など、お気軽にお問い合わせください。</p>
-      <a href="mailto:info@urbansinc.com" class="btn-contact">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@urbansinc.com"
+   class="btn-contact"
+   target="_blank"
+   rel="noopener noreferrer">
   info@urbansinc.com へメールを送る
-　　</a>
+　</a>
     </div>
   </section>
 
   <footer class="footer">
   <p>&copy; 株式会社アーバンエス (URBAN-S Co., Ltd.) All Rights Reserved.</p>
 </footer>
+<script>
+  const contactButtons = document.querySelectorAll('.btn-contact, .mobile-contact');
 
+  contactButtons.forEach(button => {
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      button.href = 'mailto:info@urbansinc.com';
+      button.removeAttribute('target');
+    } else {
+      button.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=info@urbansinc.com';
+      button.target = '_blank';
+    }
+  });
+</script>
 </body>
 </html>
