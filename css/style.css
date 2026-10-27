@@ -64,6 +64,8 @@ ul {
   display: flex;
   align-items: baseline;
   gap: 8px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* PCではスマホ用CONTACTを非表示 */
@@ -666,13 +668,13 @@ ul {
     font-size: 0.4em !important;
     white-space: nowrap;
   }
- /* スマホ用CONTACTボタン */
+/* スマホ用CONTACTボタン */
 .mobile-contact {
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-left: auto;
+  flex-shrink: 0;
 
   padding: 9px 15px;
   background: #111111;
@@ -686,5 +688,4 @@ ul {
 
   text-decoration: none;
   border-radius: 20px;
-}
 }
