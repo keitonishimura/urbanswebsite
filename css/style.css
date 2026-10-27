@@ -627,6 +627,12 @@ ul {
   .nav {
     display: none;
   }
+   .btn-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .company-list {
     grid-template-columns: 1fr;
     gap: 6px;
