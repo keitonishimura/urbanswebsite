@@ -66,6 +66,7 @@ ul {
   gap: 8px;
 }
 
+/* PCではスマホ用CONTACTを非表示 */
 .mobile-contact {
   display: none;
 }
